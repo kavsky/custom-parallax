@@ -1,6 +1,10 @@
 
 $(function()
 {
+	var x = $(window).width();
+	var y = $(window).height();
+	$('header').text('The window has a width of '+x+'px and a height of '+y+'px');
+	
 	var _prlxTop = $('.paralax').offset().top,
 		_prlxHt = $('.paralax').height(),
 		winHt = $(window).height(),
