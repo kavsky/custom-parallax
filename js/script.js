@@ -3,7 +3,11 @@ $(function()
 {
 	var x = $(window).width();
 	var y = $(window).height();
-	$('header').text('The window has a width of '+x+'px and a height of '+y+'px');
+	var xOut = $(window).outerWidth();
+	var xIn = $(window).innerWidth();
+	var yOut = $(window).outerHeight();
+	var yIn = $(window).innerHeight();
+	$('header').text('width-'+x+' height-'+y+' outerWidth-'+xOut+' innerWidth-'+xIn+' outerHeight-'+yOut+' innerHeight-'+yIn);
 	
 	var _prlxTop = $('.paralax').offset().top,
 		_prlxHt = $('.paralax').height(),
