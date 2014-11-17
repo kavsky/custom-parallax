@@ -1,7 +1,8 @@
 
 $(function()
 {
-	var x = $(window).width();
+	setTimeout(function(){
+			var x = $(window).width();
 	var y = $(window).height();
 	var xOut = $(window).outerWidth();
 	var xIn = $(window).innerWidth();
@@ -9,6 +10,8 @@ $(function()
 	var yIn = $(window).innerHeight();
 	$('header').text('width-'+x+' height-'+y+' outerWidth-'+xOut+' innerWidth-'+xIn+' outerHeight-'+yOut+' innerHeight-'+yIn);
 	
+	},1000);
+
 	var _prlxTop = $('.paralax').offset().top,
 		_prlxHt = $('.paralax').height(),
 		winHt = $(window).height(),
